@@ -7,13 +7,13 @@ namespace Creational\FactoryMethod\FormElement;
  *
  * @author jardissone
  */
-class Textarea extends AbstractFormElement
+class InputPassword extends AbstractFormElement
 {
 
     public function getHTML()
     {
-        $pattern = '<label for="%s">%s</label>' . PHP_EOL . '<textarea %s rows="5" cols="40">%s</textarea> ' . PHP_EOL;
-        
+        $pattern = '<label for="%s">%s</label>' .  PHP_EOL . '<input type="password" %s value="%s" />' . PHP_EOL;
+
         $label = $this->label;
         $id = isset($this->attrs['id']) ? 'id="' . $this->attrs['id'] . '"' : '';
         $value = isset($this->attrs['value']) ? $this->attrs['value'] : '';
