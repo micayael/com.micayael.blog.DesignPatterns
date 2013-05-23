@@ -2,7 +2,7 @@
 
 require_once './bootstrap.php';
 
-use Creational\SimpleFactory\FormElement\FormElementFactory;
+use Creational\FactoryMethod\FormElement\FormElementFactory;
 
 $inputText = FormElementFactory::create(FormElementFactory::TYPE_INPUT_TEXT);
 $inputText->setId('input1');

@@ -1,9 +1,9 @@
 <?php
 
-namespace Creational\SimpleFactory\FormElement;
+namespace Creational\FactoryMethod\FormElement;
 
-use Creational\SimpleFactory\FormElement\InputText;
-use Creational\SimpleFactory\FormElement\Textarea;
+use Creational\FactoryMethod\FormElement\InputText;
+use Creational\FactoryMethod\FormElement\Textarea;
 
 /**
  * Description of FormElementFactory

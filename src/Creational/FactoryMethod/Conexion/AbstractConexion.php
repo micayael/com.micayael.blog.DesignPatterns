@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\SimpleFactory\Conexion;
+namespace Creational\FactoryMethod\Conexion;
 
 /**
  * Description of Conexion
