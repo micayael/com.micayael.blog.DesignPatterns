@@ -7,22 +7,23 @@ namespace Structural\Decorator\LogoutLink;
  *
  * @author jardissone
  */
-class LogoutLinkH2Decorator  extends AbstractHtmlLink
+class LogoutLinkH2Decorator extends AbstractHtmlLink
 {
 
     protected $_logoutLink;
-    
+
     public function __construct(AbstractHtmlLink $logoutLink)
     {
         $this->_logoutLink = $logoutLink;
     }
-    
+
     public function getHTML()
     {
         $html = $this->_logoutLink->getHTML();
-        
+
         return '<h2>' . $html . '</h2>';
     }
+
 }
 
 ?>

@@ -15,7 +15,7 @@ abstract class AbstractConexion
     protected $user;
     protected $pass;
     protected $dbname;
-    
+
     public abstract function setDriver();
 
     function __construct($host, $user, $pass, $dbname)
@@ -24,10 +24,10 @@ abstract class AbstractConexion
         $this->user = $user;
         $this->pass = $pass;
         $this->dbname = $dbname;
-        
+
         $this->setDriver();
     }
-    
+
     public function __toString()
     {
         $pattern = 'DRIVER: [%s], HOST: [%s], USER: [%s], DBNAME: [%s]';

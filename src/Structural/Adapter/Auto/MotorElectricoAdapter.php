@@ -11,12 +11,12 @@ class MotorElectricoAdapter implements MotorInterface
 {
 
     private $motorElectrico;
-    
+
     public function __construct()
     {
         $this->motorElectrico = new MotorElectrico();
     }
-    
+
     public function encender()
     {
         $this->motorElectrico->conectar();
@@ -33,8 +33,6 @@ class MotorElectricoAdapter implements MotorInterface
         $this->motorElectrico->desactivar();
         $this->motorElectrico->desconectar();
     }
-    
-    
 
 }
 

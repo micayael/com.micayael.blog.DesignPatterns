@@ -10,7 +10,9 @@ interface MotorInterface
 {
 
     public function encender();
+
     public function acelerar();
+
     public function apagar();
 
 }

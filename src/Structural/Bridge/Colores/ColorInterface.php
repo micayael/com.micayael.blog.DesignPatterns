@@ -8,9 +8,7 @@ namespace Structural\Bridge\Colores;
  */
 interface ColorInterface
 {
-
     
-
 }
 
 ?>

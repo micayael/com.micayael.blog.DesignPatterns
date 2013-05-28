@@ -11,17 +11,17 @@ class Pizzeria
 {
 
     private $pizzaBuilder;
-    
+
     public function setPizzaBuilder(AbstractPizzaBuilder $pizzaBuilder)
     {
         $this->pizzaBuilder = $pizzaBuilder;
     }
-    
+
     public function getPizza()
     {
         return $this->pizzaBuilder->getPizza();
     }
-    
+
     public function prepararPizza()
     {
         $this->pizzaBuilder->cocinarPizza();

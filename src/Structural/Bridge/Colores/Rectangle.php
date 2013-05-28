@@ -15,6 +15,7 @@ class Rectangle extends AbstractShape
         echo 'Rectangle filled with ';
         $this->color->fillColor();
     }
+
 }
 
 ?>

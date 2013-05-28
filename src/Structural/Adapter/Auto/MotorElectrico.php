@@ -9,7 +9,7 @@ namespace Structural\Adapter\Auto;
  */
 class MotorElectrico
 {
-    
+
     private $conectado = false;
 
     public function conectar()
@@ -30,7 +30,7 @@ class MotorElectrico
     {
         echo 'moviendo más rápido<br />';
     }
-    
+
     public function desactivar()
     {
         if(!$this->conectado)
@@ -38,7 +38,7 @@ class MotorElectrico
         else
             echo 'desactivando<br />';
     }
-    
+
     public function desconectar()
     {
         echo 'desconectando<br />';

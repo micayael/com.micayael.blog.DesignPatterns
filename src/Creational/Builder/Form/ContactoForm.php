@@ -20,7 +20,7 @@ class ContactoForm extends AbstractFormBuilder
         $comentario = FormElementFactory::create(FormElementFactory::TYPE_TEXTAREA, 'Comentario:');
 
         $this->form->addInputs(array($nombre, $asunto, $email, $comentario));
-        
+
         return $this->form;
     }
 

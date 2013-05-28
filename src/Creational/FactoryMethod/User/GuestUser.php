@@ -9,9 +9,7 @@ namespace Creational\FactoryMethod\User;
  */
 class GuestUser extends AbstractUser
 {
-
     
-
 }
 
 ?>

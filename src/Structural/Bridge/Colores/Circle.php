@@ -15,6 +15,7 @@ class Circle extends AbstractShape
         echo 'Circle filled with ';
         $this->color->fillColor();
     }
+
 }
 
 ?>

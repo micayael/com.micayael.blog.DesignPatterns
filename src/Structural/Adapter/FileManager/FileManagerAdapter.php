@@ -10,7 +10,6 @@ namespace Structural\Adapter\FileManager;
 class FileManagerAdapter extends FileManagerUtil implements FileManagerInterface
 {
 
-    
     public function close()
     {
         return $this->closeFile();
@@ -25,6 +24,7 @@ class FileManagerAdapter extends FileManagerUtil implements FileManagerInterface
     {
         return $this->readFile();
     }
+
 }
 
 ?>

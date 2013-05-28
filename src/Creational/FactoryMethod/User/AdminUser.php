@@ -7,21 +7,23 @@ namespace Creational\FactoryMethod\User;
  *
  * @author jardissone
  */
+class AdminUser extends AbstractUser
+{
 
-    class AdminUser extends AbstractUser {  
-      
-        public function hasModifyPermission()  
-        {  
-            return true;  
-        }  
-      
-        public function hasDeletePermission()  
-        {  
-            return true;  
-        }  
-      
-        public function wantsFlashInterface()  
-        {  
-            return false;  
-        }  
-    }  
+    public function hasModifyPermission()
+    {
+        return true;
+    }
+
+    public function hasDeletePermission()
+    {
+        return true;
+    }
+
+    public function wantsFlashInterface()
+    {
+        return false;
+    }
+
+}
+

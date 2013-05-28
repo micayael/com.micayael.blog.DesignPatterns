@@ -7,11 +7,14 @@ namespace Structural\Bridge\DrawingAPI;
  *
  * @author jardissone
  */
-class DrawingAPI1 implements DrawingAPIInterface {
- 
-    public function drawCircle($dX, $dY, $dRadius) {
-        echo "API1.circle at ".$dX.":".$dY." radius ".$dRadius."<br/>";
+class DrawingAPI1 implements DrawingAPIInterface
+{
+
+    public function drawCircle($dX, $dY, $dRadius)
+    {
+        echo "API1.circle at " . $dX . ":" . $dY . " radius " . $dRadius . "<br/>";
     }
+
 }
 
 ?>

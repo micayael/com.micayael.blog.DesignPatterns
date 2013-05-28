@@ -18,7 +18,7 @@ abstract class FormElementFactory
     const TYPE_INPUT_PASSWORD = 1;
     const TYPE_TEXTAREA = 2;
 
-    public static function create($type, $label, $attrs=array())
+    public static function create($type, $label, $attrs = array())
     {
         switch($type)
         {

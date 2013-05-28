@@ -13,7 +13,7 @@ class Pizza
     private $masa;
     private $salsa;
     private $agregados;
-    
+
     public function __toString()
     {
         return '<pre>' . print_r($this, true) . '</pre>';

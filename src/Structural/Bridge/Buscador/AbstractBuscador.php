@@ -14,9 +14,9 @@ abstract class AbstractBuscador
 
     protected $tipoBuscador;
     protected $filtros;
-    
+
     public abstract function render();
-    
+
     public function __construct(TipoBuscador $tipoBuscador)
     {
         $this->tipoBuscador = $tipoBuscador;

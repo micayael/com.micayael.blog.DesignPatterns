@@ -9,9 +9,9 @@ namespace Structural\Decorator\FileReadWrite;
  */
 class EncryptedFileStreamDecorator extends AbstractStream
 {
-    
+
     protected $_fileStream;
-    
+
     public function __construct(AbstractStream $fileStream)
     {
         $this->_fileStream = $fileStream;

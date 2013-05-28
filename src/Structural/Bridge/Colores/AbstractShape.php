@@ -12,9 +12,9 @@ abstract class AbstractShape
 {
 
     protected $color;
-    
+
     public abstract function colorIt();
-    
+
     public function __construct(ColorInterface $color)
     {
         $this->color = $color;

@@ -11,6 +11,7 @@ abstract class AbstractStream
 {
 
     public abstract function read();
+
     public abstract function write();
 
 }

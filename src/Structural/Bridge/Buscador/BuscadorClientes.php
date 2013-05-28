@@ -19,9 +19,10 @@ class BuscadorClientes extends AbstractBuscador
             array('label' => 'Usuario:'),
             array('label' => 'Tipo de Empresa:'),
         );
-        
+
         echo $this->tipoBuscador->getHTML($this->filtros);
     }
+
 }
 
 ?>

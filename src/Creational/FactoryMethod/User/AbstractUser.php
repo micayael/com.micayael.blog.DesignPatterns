@@ -16,15 +16,15 @@ abstract class AbstractUser
     {
         $this->name = $name;
     }
-    
+
     public function __toString()
     {
         $ret = '<pre>';
         $ret .= 'getName: ' . $this->getName() . PHP_EOL;
         $ret .= 'hasReadPermission: ' . ($this->hasReadPermission() ? 'SI' : 'NO') . PHP_EOL;
-        $ret .= 'hasModifyPermission: ' . ($this->hasModifyPermission() ? 'SI' : 'NO')  . PHP_EOL;
-        $ret .= 'hasDeletePermission: ' . ($this->hasDeletePermission() ? 'SI' : 'NO')  . PHP_EOL;
-        $ret .= 'wantsFlashInterface: ' . ($this->wantsFlashInterface() ? 'SI' : 'NO')  . PHP_EOL;
+        $ret .= 'hasModifyPermission: ' . ($this->hasModifyPermission() ? 'SI' : 'NO') . PHP_EOL;
+        $ret .= 'hasDeletePermission: ' . ($this->hasDeletePermission() ? 'SI' : 'NO') . PHP_EOL;
+        $ret .= 'wantsFlashInterface: ' . ($this->wantsFlashInterface() ? 'SI' : 'NO') . PHP_EOL;
         $ret .= '</pre>';
         return $ret;
     }

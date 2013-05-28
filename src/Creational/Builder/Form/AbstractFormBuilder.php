@@ -13,12 +13,12 @@ abstract class AbstractFormBuilder
 {
 
     protected $form;
-    
+
     public function __construct()
     {
         $this->form = new Form();
     }
-    
+
     public abstract function buildForm();
 
 }

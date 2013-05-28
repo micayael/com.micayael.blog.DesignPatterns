@@ -18,7 +18,7 @@ class LoginForm extends AbstractFormBuilder
         $password = FormElementFactory::create(FormElementFactory::TYPE_INPUT_PASSWORD, 'Clave:');
 
         $this->form->addInputs(array($user, $password));
-        
+
         return $this->form;
     }
 
