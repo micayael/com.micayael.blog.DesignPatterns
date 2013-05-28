@@ -22,7 +22,7 @@ abstract class AbstractFormElement
 
     public function __toString()
     {
-        return '<pre>' . $this->getHTML() . '</pre>';
+        return $this->getHTML();
     }
 
 }
