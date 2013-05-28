@@ -12,7 +12,7 @@ class LogoutLinkStrongDecorator  extends AbstractHtmlLink
 
     protected $_logoutLink;
     
-    public function __construct($logoutLink)
+    public function __construct(AbstractHtmlLink $logoutLink)
     {
         $this->_logoutLink = $logoutLink;
     }
