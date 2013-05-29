@@ -11,7 +11,7 @@ class Util
         $geshi = new \GeSHi($source, 'php');
         $geshi->enable_line_numbers(GESHI_NORMAL_LINE_NUMBERS);
 
-        echo $geshi->parse_code();
+        echo '<hr /><div style="border: solid 1px red">' . $geshi->parse_code() . '</div>';
     }
 
 }

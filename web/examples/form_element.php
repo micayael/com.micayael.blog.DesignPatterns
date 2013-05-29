@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../bootstrap.php';
 
 use Util\Util;
-use Creational\FactoryMethod\FormElement\FormElementFactory;
+use Creational\SimpleFactory\FormElement\FormElementFactory;
 
 $inputText = FormElementFactory::create(FormElementFactory::TYPE_INPUT_TEXT, 'Nombre:', array(
             'id' => 'input1',

@@ -1,10 +1,10 @@
 <?php
 
-namespace Creational\FactoryMethod\FormElement;
+namespace Creational\SimpleFactory\FormElement;
 
-use Creational\FactoryMethod\FormElement\InputText;
-use Creational\FactoryMethod\FormElement\InputPassword;
-use Creational\FactoryMethod\FormElement\Textarea;
+use Creational\SimpleFactory\FormElement\InputText;
+use Creational\SimpleFactory\FormElement\InputPassword;
+use Creational\SimpleFactory\FormElement\Textarea;
 
 /**
  * Description of FormElementFactory

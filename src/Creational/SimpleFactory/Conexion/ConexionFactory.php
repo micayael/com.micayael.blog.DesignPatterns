@@ -1,9 +1,9 @@
 <?php
 
-namespace Creational\FactoryMethod\Conexion;
+namespace Creational\SimpleFactory\Conexion;
 
-use Creational\FactoryMethod\Conexion\MysqlConexion;
-use Creational\FactoryMethod\Conexion\PostgresqlConexion;
+use Creational\SimpleFactory\Conexion\MysqlConexion;
+use Creational\SimpleFactory\Conexion\PostgresqlConexion;
 
 /**
  * Description of ConexionFactory

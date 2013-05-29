@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../bootstrap.php';
 
 use Util\Util;
-use Creational\FactoryMethod\Conexion\ConexionFactory;
+use Creational\SimpleFactory\Conexion\ConexionFactory;
 
 echo $mysqlConexion = ConexionFactory::create(ConexionFactory::MYSQL, 'localhost', 'root', '', 'test');
 echo '<br />';

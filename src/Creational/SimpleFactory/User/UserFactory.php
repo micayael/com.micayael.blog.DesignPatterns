@@ -1,10 +1,10 @@
 <?php
 
-namespace Creational\FactoryMethod\User;
+namespace Creational\SimpleFactory\User;
 
-use Creational\FactoryMethod\User\GuestUser;
-use Creational\FactoryMethod\User\CustomerUser;
-use Creational\FactoryMethod\User\AdminUser;
+use Creational\SimpleFactory\User\GuestUser;
+use Creational\SimpleFactory\User\CustomerUser;
+use Creational\SimpleFactory\User\AdminUser;
 
 /**
  * Description of UserFactory

@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\FactoryMethod\Conexion;
+namespace Creational\SimpleFactory\Conexion;
 
 /**
  * Description of PostgresqlConexion

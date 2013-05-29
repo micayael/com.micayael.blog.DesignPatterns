@@ -5,7 +5,7 @@
 require_once __DIR__ . '/../bootstrap.php';
 
 use Util\Util;
-use Creational\FactoryMethod\User\UserFactory;
+use Creational\SimpleFactory\User\UserFactory;
 
 echo $guest = UserFactory::create(UserFactory::GUEST);
 echo $customer = UserFactory::create(UserFactory::CUSTOMER);

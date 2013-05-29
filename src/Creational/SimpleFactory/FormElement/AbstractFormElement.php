@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\FactoryMethod\FormElement;
+namespace Creational\SimpleFactory\FormElement;
 
 /**
  *

@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\FactoryMethod\User;
+namespace Creational\SimpleFactory\User;
 
 /**
  * Description of CustomerUser
