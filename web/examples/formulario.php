@@ -1,7 +1,8 @@
 <?php
 
-require_once './bootstrap.php';
+require_once __DIR__ . '/../bootstrap.php';
 
+use Util\Util;
 use Creational\Builder\Form\FormDirector;
 use Creational\Builder\Form\LoginForm;
 use Creational\Builder\Form\ContactoForm;
@@ -15,3 +16,5 @@ echo '<hr />';
 
 $contactoForm = $formDirector->buildForm(new ContactoForm());
 echo $contactoForm->render();
+
+Util::showCode(__FILE__);

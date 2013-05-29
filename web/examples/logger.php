@@ -2,8 +2,9 @@
 
 // Ejemplo tomado de http://www.baluart.net/articulo/introduccion-a-los-patrones-de-diseno-con-php
 
-require_once './bootstrap.php';
+require_once __DIR__ . '/../bootstrap.php';
 
+use Util\Util;
 use Structural\Decorator\Logger\LoggerFactory;
 use Structural\Decorator\Logger\HtmlLoggerDecorator;
 use Structural\Decorator\Logger\XmlLoggerDecorator;
@@ -51,3 +52,5 @@ $csvLogger = new CsvLoggerDecorator($fileLogger);
 $csvLogger->log('Prueba de log');
 $csvLogger->log('Prueba de log');
 $csvLogger->log('Prueba de log');
+
+Util::showCode(__FILE__);

@@ -1,5 +1,7 @@
 {
     "require": {
-        "symfony/class-loader": "2.1.x-dev"
+        "symfony/class-loader": "2.1.x-dev",
+        "twig/twig": "1.*",
+        "easybook/geshi": "dev-master"
     }
 }

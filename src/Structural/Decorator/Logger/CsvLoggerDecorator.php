@@ -15,11 +15,11 @@ class CsvLoggerDecorator extends AbstractLoggerDecorator
         $msg = $this->makeCsv($msg);
         $this->logger->log($msg);
     }
-    
+
     private function makeCsv($text)
     {
         $ret = date('Y-m-d') . ';' . date('h:i:s') . ';' . $text;
-        
+
         return $ret;
     }
 

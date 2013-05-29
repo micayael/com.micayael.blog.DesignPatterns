@@ -15,12 +15,12 @@ class XmlLoggerDecorator extends AbstractLoggerDecorator
         $msg = $this->makeXML($msg);
         $this->logger->log($msg);
     }
-    
+
     private function makeXML($text)
     {
         $ret = '<log date="%s" time="%s">%s</log>';
         $ret = sprintf($ret, date('Y-m-d'), date('h:i:s'), $text);
-        
+
         return $ret;
     }
 

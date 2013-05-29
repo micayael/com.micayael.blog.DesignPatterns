@@ -1,0 +1,31 @@
+<div class="accordion" id="{{ category_id }}">
+
+    {% for pattern_id,pattern in patterns %}
+
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{ category_id }}" href="#{{ pattern_id }}">
+                {{ category_number }}.{{ loop.index }}. {{ pattern.name }} ({{ pattern.examples | length }})
+            </a>
+        </div>
+        <div id="{{ pattern_id }}" class="accordion-body collapse">
+            <div class="accordion-inner">
+                
+                <dl>
+                
+                {% for example in pattern.examples %}
+                    
+                    <dt><a href="{{ example.url }}">{{ loop.index }}. {{ example.name }}</a>
+                    <dd>{{ example.description }}
+                    
+                {% endfor %}
+                
+                </dl>
+                
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>

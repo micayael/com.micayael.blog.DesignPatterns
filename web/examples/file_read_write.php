@@ -2,8 +2,9 @@
 
 // Ejemplo tomado de http://www.baluart.net/articulo/introduccion-a-los-patrones-de-diseno-con-php
 
-require_once './bootstrap.php';
+require_once __DIR__ . '/../bootstrap.php';
 
+use Util\Util;
 use Structural\Decorator\FileReadWrite\FileStream;
 use Structural\Decorator\FileReadWrite\CompressedFileStreamDecorator;
 use Structural\Decorator\FileReadWrite\EncryptedFileStreamDecorator;
@@ -28,3 +29,5 @@ $file4 = new CompressedFileStreamDecorator($file1);
 $file4 = new EncryptedFileStreamDecorator($file4);
 echo $file4->read();
 echo $file4->write();
+
+Util::showCode(__FILE__);

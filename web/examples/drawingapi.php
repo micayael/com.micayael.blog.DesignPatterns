@@ -2,8 +2,9 @@
 
 // Ejemplo tomado de http://javapostsforlearning.blogspot.com/2012/09/bridge-design-pattern-in-java.html
 
-require_once './bootstrap.php';
+require_once __DIR__ . '/../bootstrap.php';
 
+use Util\Util;
 use Structural\Bridge\DrawingAPI\CircleShape;
 use Structural\Bridge\DrawingAPI\DrawingAPI1;
 use Structural\Bridge\DrawingAPI\DrawingAPI2;
@@ -18,3 +19,5 @@ foreach($aShapes as $shapes)
     $shapes->resizeByPercentage(2.5);
     $shapes->draw();
 }
+
+Util::showCode(__FILE__);

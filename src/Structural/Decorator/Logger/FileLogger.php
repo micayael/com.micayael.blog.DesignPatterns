@@ -9,13 +9,13 @@ namespace Structural\Decorator\Logger;
  */
 class FileLogger implements LoggerInterface
 {
-    
+
     private $filename = '/tmp/filelogger.log';
 
     public function log($msg)
     {
         $msg = $msg . PHP_EOL;
-        
+
         $fp = fopen($this->filename, 'a');
         fwrite($fp, $msg);
         fclose($fp);

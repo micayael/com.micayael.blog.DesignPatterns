@@ -9,9 +9,9 @@ namespace Structural\Decorator\Logger;
  */
 abstract class AbstractLoggerDecorator implements LoggerInterface
 {
-    
+
     protected $logger;
-    
+
     public function __construct(LoggerInterface $logger)
     {
         $this->logger = $logger;

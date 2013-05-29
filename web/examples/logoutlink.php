@@ -2,8 +2,9 @@
 
 // Ejemplo tomado de http://www.baluart.net/articulo/introduccion-a-los-patrones-de-diseno-con-php
 
-require_once './bootstrap.php';
+require_once __DIR__ . '/../bootstrap.php';
 
+use Util\Util;
 use Structural\Decorator\LogoutLink\LogoutLink;
 use Structural\Decorator\LogoutLink\LogoutLinkH2Decorator;
 use Structural\Decorator\LogoutLink\LogoutLinkStrongDecorator;
@@ -24,3 +25,5 @@ echo $logout_link_decorado2->getHTML() . PHP_EOL;
 $logout_link_decorado3 = new LogoutLinkH2Decorator($logout_link);
 $logout_link_decorado3 = new LogoutLinkStrongDecorator($logout_link_decorado3);
 echo $logout_link_decorado3->getHTML() . PHP_EOL;
+
+Util::showCode(__FILE__);

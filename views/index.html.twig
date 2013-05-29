@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block container %}
+
+<div class="container">
+
+    <h1>Patrones de Diseño</h1>
+    
+    <div class="accordion" id="designpatterns">
+        
+        {% for category_id,category in menu %}
+        
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#designpatterns" href="#{{ category_id }}">
+                    {{ loop.index }}. {{ category.name }}
+                </a>
+            </div>
+            <div id="{{ category_id }}" class="accordion-body collapse in">
+                <div class="accordion-inner">
+                    {% include '_patterns.html.twig' with { 'category_number': loop.index, 'category_id': category_id, 'patterns': category.patterns } %}
+                </div>
+            </div>
+        </div>
+        
+        {% endfor %}
+        
+    </div>
+
+{% endblock %}

@@ -9,7 +9,7 @@ namespace Structural\Decorator\Logger;
  */
 class LoggerFactory
 {
-    
+
     const TYPE_CONSOLE_LOGGER = 0;
     const TYPE_FILE_LOGGER = 1;
 
@@ -23,7 +23,7 @@ class LoggerFactory
                 throw new \Exception('Tipo de logger desconocido');
         }
     }
-    
+
 }
 
 ?>
