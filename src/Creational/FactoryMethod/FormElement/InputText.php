@@ -1,18 +1,18 @@
 <?php
 
-namespace Creational\SimpleFactory\FormElement;
+namespace Creational\FactoryMethod\FormElement;
 
 /**
  * Description of InputText
  *
  * @author jardissone
  */
-class InputPassword extends AbstractFormElement
+class InputText extends AbstractFormElement
 {
 
     public function getHTML()
     {
-        $pattern = '<label for="%s">%s</label>' . PHP_EOL . '<input type="password" %s value="%s" />' . PHP_EOL;
+        $pattern = '<label for="%s">%s</label>' . PHP_EOL . '<input type="text" %s value="%s" />' . PHP_EOL;
 
         $label = $this->label;
         $id = isset($this->attrs['id']) ? 'id="' . $this->attrs['id'] . '"' : '';

@@ -11,14 +11,21 @@ $menu['creational']['patterns']['simple-factory']['examples'] = array(
         'description' => 'Existen varias clases que manejan la conexión a base de datos, todas heredan de una clase abstractas para estandarizar y el Factory devuelve la instancia solicitada.'
     ),
     array(
-        'name' => 'Form Element',
-        'url' => BASE_URL . 'form_element.php',
-        'description' => 'Existen varios componentes de formularios que son devueltos por un factory. Muy parecido al ejemplo de Conexión.'
-    ),
-    array(
         'name' => 'Users',
         'url' => BASE_URL . 'user.php',
         'description' => 'La diferencia con los ejemplos de Conexion y Form Element es que en este caso el Factory implementa una interfaz FactoryInterface. Quizá esto tenga más sentido hacerlo para un Factory Method pero los frameworks suelen manejar estas interfaces para la inyección de dependencias.'
+    ),
+);
+
+/* * *****************************************************************************
+ * EXAMPLES: Factory Method
+ * ***************************************************************************** */
+
+$menu['creational']['patterns']['factory-method']['examples'] = array(
+    array(
+        'name' => 'Form Element',
+        'url' => BASE_URL . 'form_element.php',
+        'description' => 'A diferencia del patrón SimpleFactory, este delega a las subclases la creación de la instancia. Se puede utilizar para tener familias de Factories pero que finalmente dependen de la misma familia de productos.'
     ),
 );
 

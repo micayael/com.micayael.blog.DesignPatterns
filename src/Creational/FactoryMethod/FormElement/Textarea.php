@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\SimpleFactory\FormElement;
+namespace Creational\FactoryMethod\FormElement;
 
 /**
  * Description of InputText
