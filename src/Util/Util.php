@@ -13,5 +13,13 @@ class Util
 
         echo '<hr /><div style="border: solid 1px red">' . $geshi->parse_code() . '</div>';
     }
+    
+    public static function showImage($filename)
+    {
+        $data = explode('/', $filename);
+        $data = explode('.', $data[count($data)-1]);
+        $filename = $data[0] . '.jpg';
+        echo '<hr /><img src="../images/' . $filename . '" />';
+    }
 
 }

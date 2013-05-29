@@ -9,4 +9,5 @@ echo $mysqlConexion = ConexionFactory::create(ConexionFactory::MYSQL, 'localhost
 echo '<br />';
 echo $postgresqlConexion = ConexionFactory::create(ConexionFactory::POSTGRESQL, 'localhost', 'root', '', 'test');
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

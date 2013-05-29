@@ -11,4 +11,5 @@ echo $guest = UserFactory::create(UserFactory::GUEST);
 echo $customer = UserFactory::create(UserFactory::CUSTOMER);
 echo $admin = UserFactory::create(UserFactory::ADMIN);
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

@@ -6,6 +6,7 @@ $menu = array(
         'patterns' => array(
             'simple-factory' => array(
                 'name' => 'Simple Factory',
+                'description' => 'Entre los patrones de Factory este es el más sencillo. Por lo general se encuentran referencias similares entre el Simple Factory y el Factory Method. La diferencia es que el Factory Method delega a las subclases la decisión de la instancia a devolver mientras que el Simple Factory no delega esa resonsabilidad a ningún hijo.',
                 'examples' => array()
             ),
             'factory-method' => array(

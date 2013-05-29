@@ -24,4 +24,5 @@ $textarea = FormElementFactory::create(FormElementFactory::TYPE_TEXTAREA, 'Descr
         ));
 echo $textarea->getHTML();
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);
