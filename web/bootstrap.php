@@ -17,3 +17,6 @@ $loader->register();
 Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem(__DIR__ . '/../views');
 $twig = new Twig_Environment($loader, array());
+
+//-- Para obtener el contenido de la página ejecutada. Se imprime desde la clase Util
+ob_start();

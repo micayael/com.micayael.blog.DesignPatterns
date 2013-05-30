@@ -17,4 +17,5 @@ echo '<hr />';
 $clientes2 = new BuscadorClientes(new BuscadorDosColumna());
 $clientes2->render();
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

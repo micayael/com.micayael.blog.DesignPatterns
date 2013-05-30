@@ -2,7 +2,7 @@
 
 namespace Structural\Bridge\Buscador;
 
-use Creational\FactoryMethod\FormElement\FormElementFactory;
+use Creational\FactoryMethod\FormElement\InputFormElementFactory;
 
 /**
  * Description of BuscadorUnaColumna
@@ -18,7 +18,7 @@ class BuscadorUnaColumna implements TipoBuscador
 
         foreach($filtros as $filtro)
         {
-            $input = FormElementFactory::create(FormElementFactory::TYPE_INPUT_TEXT, $filtro['label']);
+            $input = InputFormElementFactory::create(InputFormElementFactory::TYPE_INPUT_TEXT, $filtro['label']);
             $ret .= '<div>' . $input . '</div>' . PHP_EOL;
         }
 

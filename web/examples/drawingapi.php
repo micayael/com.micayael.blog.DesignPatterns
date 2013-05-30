@@ -20,4 +20,5 @@ foreach($aShapes as $shapes)
     $shapes->draw();
 }
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

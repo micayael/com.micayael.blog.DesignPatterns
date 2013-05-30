@@ -26,4 +26,5 @@ $logout_link_decorado3 = new LogoutLinkH2Decorator($logout_link);
 $logout_link_decorado3 = new LogoutLinkStrongDecorator($logout_link_decorado3);
 echo $logout_link_decorado3->getHTML() . PHP_EOL;
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

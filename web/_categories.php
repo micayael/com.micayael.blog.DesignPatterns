@@ -11,6 +11,7 @@ $menu = array(
             ),
             'factory-method' => array(
                 'name' => 'Factory Method',
+                'description' => 'A diferencia del Simple Factory, el Factory Method delega a sus subclases decidir cual objeto devolver. Esto permite tener clasificadas las familias de productos.',
                 'examples' => array()
             ),
             'abstract-factory' => array(
@@ -23,6 +24,7 @@ $menu = array(
             ),
             'builder' => array(
                 'name' => 'Builder',
+                'description' => 'Este patrón de diseño permite construir objetos complejos. A diferencia de los Factory, este realiza operaciones para construir el objeto mientras que el factory directamente devuelve un objeto.',
                 'examples' => array()
             ),
             'singleton' => array(
@@ -36,6 +38,7 @@ $menu = array(
         'patterns' => array(
             'adapter' => array(
                 'name' => 'Adapter (Wrapper)',
+                'description' => 'El patrón Adapter, también conocido como Wrapper, permite amoldar una implementación para adecuarse a una interfaz. Se suele tomar como una correción a no haber pensado bien en el análisis de arquitectura del software pero en realidad se utiliza para permitir nuevas implementaciones. Por ejemplo los Adapters de Android permiten que los desarrolladores puedan extender de ellos manteniendo una extructura ya que el framework utilizará esas implementaciones y por lo tanto deberían tener los métodos esperados. Este patrón es muy parecido el Builder pero la diferencia es el momento en que se utilizan. El Adpter permite amoldar un objeto para que pueda conectarse con otro mientras que el Builder está pensado antes como para mantener una estructura desde el comienzo. Hay básicamente dos tipos Class Adapter (heredando de la clase que quiere adaptar) y Object Adapter (el adapter tiene una instancia del objeto a adaptar dentro que puede crearse dentro o recibirse en el constructor)',
                 'examples' => array()
             ),
             'facade' => array(
@@ -48,6 +51,7 @@ $menu = array(
             ),
             'bridge' => array(
                 'name' => 'Bridge',
+                'description' => 'El patrón Bridge permite desacoplar una abstracción de su implementación para que puedan variar independientemente. El patrón Adapter es aplicado a sistemas después de haber sido diseñados (Wrapper) mientras que le patrón Bridge es usado desde el principio para que la abstracción y la implementación puedan ir de manera diferente. En el ejemplo de Colores hay un link que muestra como cambiar una idea para utilizar este patrón.',
                 'examples' => array()
             ),
             'decorator' => array(

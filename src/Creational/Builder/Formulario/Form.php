@@ -1,6 +1,6 @@
 <?php
 
-namespace Creational\Builder\Form;
+namespace Creational\Builder\Formulario;
 
 /**
  * Description of Form

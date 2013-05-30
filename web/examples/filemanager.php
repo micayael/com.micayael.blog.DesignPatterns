@@ -12,4 +12,5 @@ $adapter->open('archivo.txt');
 echo $adapter->read();
 $adapter->close();
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

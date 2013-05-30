@@ -7,7 +7,7 @@ namespace Structural\Bridge\DrawingAPI;
  *
  * @author jardissone
  */
-class CircleShape extends Shape
+class CircleShape extends AbstractShape
 {
 
     private $dX;

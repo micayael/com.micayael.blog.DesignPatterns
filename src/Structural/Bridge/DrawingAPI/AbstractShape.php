@@ -7,7 +7,7 @@ namespace Structural\Bridge\DrawingAPI;
  *
  * @author jardissone
  */
-abstract class Shape
+abstract class AbstractShape
 {
 
     protected $oDrawingAPI;

@@ -2,7 +2,7 @@
 
 namespace Structural\Bridge\Buscador;
 
-use Creational\FactoryMethod\FormElement\FormElementFactory;
+use Creational\FactoryMethod\FormElement\InputFormElementFactory;
 
 /**
  * Description of BuscadorUnaColumna
@@ -18,11 +18,11 @@ class BuscadorDosColumna implements TipoBuscador
 
         for($i = 0; $i < count($filtros); $i = $i + 2)
         {
-            $input = FormElementFactory::create(FormElementFactory::TYPE_INPUT_TEXT, $filtros[$i]['label']);
+            $input = InputFormElementFactory::create(InputFormElementFactory::TYPE_INPUT_TEXT, $filtros[$i]['label']);
 
             if(isset($filtros[$i + 1]))
             {
-                $input2 = FormElementFactory::create(FormElementFactory::TYPE_INPUT_TEXT, $filtros[$i + 1]['label']);
+                $input2 = InputFormElementFactory::create(InputFormElementFactory::TYPE_INPUT_TEXT, $filtros[$i + 1]['label']);
             }
             else
             {

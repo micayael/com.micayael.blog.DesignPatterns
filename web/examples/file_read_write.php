@@ -30,4 +30,5 @@ $file4 = new EncryptedFileStreamDecorator($file4);
 echo $file4->read();
 echo $file4->write();
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

@@ -53,4 +53,5 @@ $csvLogger->log('Prueba de log');
 $csvLogger->log('Prueba de log');
 $csvLogger->log('Prueba de log');
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

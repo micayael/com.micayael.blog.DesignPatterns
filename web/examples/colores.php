@@ -22,4 +22,5 @@ $circle1->colorIt();
 $circle2 = new Circle(new RedColor());
 $circle2->colorIt();
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

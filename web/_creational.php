@@ -37,6 +37,6 @@ $menu['creational']['patterns']['builder']['examples'] = array(
     array(
         'name' => 'Pizzería',
         'url' => BASE_URL . 'pizzeria.php',
-        'description' => ''
+        'description' => 'En este ejemplo se tiene un Director (Pizzeria) quien se encarga de invocar al ConstructorConcreto (CuatroQuesosBuilder, CatupiriConPolloBuilder) para obtener el Producto requerido (Pizza).'
     ),
 );

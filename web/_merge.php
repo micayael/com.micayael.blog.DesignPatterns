@@ -1,38 +1,38 @@
 <?php
 
 /* * *****************************************************************************
- * EXTRA EXAMPLES: Builder + Simple Factory
+ * EXTRA EXAMPLES: Builder + Factory Method
  * ***************************************************************************** */
 
-$builder_simplefactory = array(
+$builder_factorymethod = array(
     array(
-        'name' => 'Formulario + Form Element (Builder + Simple Factory)',
+        'name' => 'Formulario + Form Element (Builder + Factory Method)',
         'url' => BASE_URL . 'formulario.php',
-        'description' => ''
+        'description' => 'Este ejemplo incluye los patrones Builder y Factory Method, ambos creacionales. Por le lado del factory se reutiliza el mismo ejempo Form Element y por el lado de builder, el FormDirector se encarga de crear el formulario de acuerdo a builder que recibe.'
     ),
 );
 
-foreach($builder_simplefactory as $example)
+foreach($builder_factorymethod as $example)
 {
-    $menu['creational']['patterns']['simple-factory']['examples'][] = $example;
+    $menu['creational']['patterns']['factory-method']['examples'][] = $example;
     $menu['creational']['patterns']['builder']['examples'][] = $example;
 }
 
 /* * *****************************************************************************
- * EXTRA EXAMPLES: Bridge + Simple Factory
+ * EXTRA EXAMPLES: Bridge + Factory Method
  * ***************************************************************************** */
 
-$bridge_simplefactory = array(
+$bridge_factorymethod = array(
     array(
-        'name' => 'Buscador + Form Element (Bridge + Simple Factory)',
+        'name' => 'Buscador + Form Element (Bridge + Factory Method)',
         'url' => BASE_URL . 'buscador.php',
-        'description' => 'Con este ejemplo se puede ver que se dividen en dos la lógica del buscador (abstracción) haciendo que cada buscador sepa cuales son sus filtros y la implementación que especifica en cuantas columnas se mostrarán los filtros'
+        'description' => 'Con este ejemplo se puede ver que se dividen en dos la lógica del buscador (abstracción) haciendo que cada buscador sepa cuales son sus filtros y la implementación que especifica en cuantas columnas se mostrarán los filtros.'
     ),
 );
 
-foreach($bridge_simplefactory as $example)
+foreach($bridge_factorymethod as $example)
 {
-    $menu['creational']['patterns']['simple-factory']['examples'][] = $example;
+    $menu['creational']['patterns']['factory-method']['examples'][] = $example;
     $menu['structural']['patterns']['bridge']['examples'][] = $example;
 }
 

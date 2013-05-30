@@ -29,4 +29,5 @@ $motorElectrico->encender();
 $motorElectrico->acelerar();
 $motorElectrico->apagar();
 
+Util::showImage(__FILE__);
 Util::showCode(__FILE__);

@@ -1,8 +1,6 @@
 <?php
 
-namespace Creational\Builder\Form;
-
-use Creational\Builder\Form\Form;
+namespace Creational\Builder\Formulario;
 
 /**
  * Description of AbstractFormBuilder
