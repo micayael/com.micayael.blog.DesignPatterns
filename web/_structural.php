@@ -47,6 +47,6 @@ $menu['structural']['patterns']['decorator']['examples'] = array(
     array(
         'name' => 'File Read Write',
         'url' => BASE_URL . 'file_read_write.php',
-        'description' => ''
+        'description' => 'Poder ver en este ejemplo como la funcionalidad básica del lector y escritor de archivos puede tener mayor funcionalidad si lo decoramos con un Decorator. Al igual que el ejemplo anterior los decoradores son dos y no tienen un padre decorador como si se muestra en el ejemplo Logger.'
     ),
 );

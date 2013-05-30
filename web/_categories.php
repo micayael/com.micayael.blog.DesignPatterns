@@ -56,6 +56,7 @@ $menu = array(
             ),
             'decorator' => array(
                 'name' => 'Decorator',
+                'description' => 'El patrón Decorator permite añadir funcionalidades de acuerdo al Decorador especificado.',
                 'examples' => array()
             ),
             'flyweight' => array(
