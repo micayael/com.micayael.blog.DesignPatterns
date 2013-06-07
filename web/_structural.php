@@ -50,3 +50,15 @@ $menu['structural']['patterns']['decorator']['examples'] = array(
         'description' => 'Poder ver en este ejemplo como la funcionalidad básica del lector y escritor de archivos puede tener mayor funcionalidad si lo decoramos con un Decorator. Al igual que el ejemplo anterior los decoradores son dos y no tienen un padre decorador como si se muestra en el ejemplo Logger.'
     ),
 );
+
+/* * *****************************************************************************
+ * EXAMPLES: Facade
+ * ***************************************************************************** */
+
+$menu['structural']['patterns']['facade']['examples'] = array(
+    array(
+        'name' => 'BankAccountFacade',
+        'url' => BASE_URL . 'bank_account.php',
+        'description' => 'Se puede notar en este ejemplo como el cliente accede al Facade utilizando sus métodos públicos, sin saber que se tiene que hacer internamente para lograr los resultados.'
+    ),
+);

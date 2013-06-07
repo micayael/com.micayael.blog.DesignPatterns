@@ -30,6 +30,18 @@ $menu['creational']['patterns']['factory-method']['examples'] = array(
 );
 
 /* * *****************************************************************************
+ * EXAMPLES: Abstract Factory
+ * ***************************************************************************** */
+
+$menu['creational']['patterns']['abstract-factory']['examples'] = array(
+    array(
+        'name' => 'Button',
+        'url' => BASE_URL . 'button.php',
+        'description' => ''
+    ),
+);
+
+/* * *****************************************************************************
  * EXAMPLES: Builder
  * ***************************************************************************** */
 

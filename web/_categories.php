@@ -43,6 +43,7 @@ $menu = array(
             ),
             'facade' => array(
                 'name' => 'Facade',
+                'description' => 'Este patrón permite ser una interfaz para acceder a funcionalidades relacionadas sin tener que conocer su procesamientos internos.',
                 'examples' => array()
             ),
             'proxy' => array(
