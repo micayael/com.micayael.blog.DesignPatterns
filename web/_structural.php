@@ -62,3 +62,20 @@ $menu['structural']['patterns']['facade']['examples'] = array(
         'description' => 'Se puede notar en este ejemplo como el cliente accede al Facade utilizando sus métodos públicos, sin saber que se tiene que hacer internamente para lograr los resultados.'
     ),
 );
+
+/* * *****************************************************************************
+ * EXAMPLES: Proxy
+ * ***************************************************************************** */
+
+$menu['structural']['patterns']['proxy']['examples'] = array(
+    array(
+        'name' => 'Cache',
+        'url' => BASE_URL . 'cache.php',
+        'description' => 'En este ejemplo se usa el proxy como un cache. Para no tener que estar ejecutando un proceso pesado siempre.'
+    ),
+    array(
+        'name' => 'ImageViewer',
+        'url' => BASE_URL . 'image_viewer.php',
+        'description' => 'En este ejemplo se puede notar que si uso el objeto HighResPhoto, por cada imagen hace el loding y termina mostrando solo la que quiero, mientras que si uso el Proxy, por más que haya creado tres imágenes solo se carga la que tenga que ser mostrada al usuario. Esto permite ahorro de performance. Este es un ejemplo de Virtual Proxy: Retrasa la creación e inacialización de objecto pesados hasta que sean necesitados.'
+    ),
+);
