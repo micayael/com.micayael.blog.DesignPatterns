@@ -21,11 +21,11 @@ class Util
         echo '<hr /><h6>Codigo PHP</h6>';
         echo '<div style="border: solid 1px red">' . $geshi->parse_code() . '</div>';
     }
-    
+
     public static function showImage($filename)
     {
         $data = explode('/', $filename);
-        $data = explode('.', $data[count($data)-1]);
+        $data = explode('.', $data[count($data) - 1]);
         $filename = $data[0] . '.jpg';
         echo PHP_EOL . PHP_EOL . '<!--Hasta aqui el codigo generado-->' . PHP_EOL . '<hr /><img src="../images/' . $filename . '" />';
     }

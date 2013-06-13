@@ -9,6 +9,7 @@ $loader = new UniversalClassLoader();
 $loader->registerNamespaces(array(
     'Creational' => __DIR__ . '/../src/',
     'Structural' => __DIR__ . '/../src/',
+    'Behavioral' => __DIR__ . '/../src/',
     'Util' => __DIR__ . '/../src/'
 ));
 

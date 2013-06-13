@@ -20,14 +20,14 @@ class Select extends AbstractFormElement
         $id = isset($this->attrs['id']) ? 'id="' . $this->attrs['id'] . '"' : '';
         $value = isset($this->attrs['value']) ? $this->attrs['value'] : '';
         $name = isset($this->attrs['name']) ? 'name="' . $this->attrs['name'] . '"' : '';
-        
+
         $ret = '';
-        
+
         foreach($this->options as $key => $value)
         {
             $ret .= sprintf($options_pattern, $key, $value);
         }
-        
+
         $ret = sprintf($select_pattern, $id, $name, $ret);
         $ret = sprintf($label_pattern, $id, $label) . $ret;
 

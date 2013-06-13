@@ -9,11 +9,10 @@ namespace Structural\Proxy\ImageViewer;
  */
 class ImageProxy implements ImageInterface
 {
-    
+
     private $imageFilePath;
-    
     private $proxifiedImage;
-    
+
     public function __construct($imageFilePath)
     {
         $this->imageFilePath = $imageFilePath;

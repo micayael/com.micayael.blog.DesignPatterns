@@ -34,7 +34,7 @@ class BankAccountFacade
         $this->codeChecker = new SecurityCodeCheck();
         $this->fundChecker = new FundsCheck();
     }
-    
+
     public function getCashInAccount()
     {
         return $this->fundChecker->getCashInAccount();

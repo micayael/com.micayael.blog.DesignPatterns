@@ -9,14 +9,14 @@ namespace Structural\Proxy\ImageViewer;
  */
 class HighResolutionImage implements ImageInterface
 {
-    
-    private $image;            
-    
+
+    private $image;
+
     public function __construct($imageFilePath)
     {
         $this->loadImage($imageFilePath);
     }
-    
+
     private function loadImage($imageFilePath)
     {
         $this->image = $imageFilePath;

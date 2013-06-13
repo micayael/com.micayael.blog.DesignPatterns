@@ -93,6 +93,7 @@ $menu = array(
             ),
             'state' => array(
                 'name' => 'State',
+                'description' => 'Con el patrón State creamos varios objetos que representan estados y un Context el cual cambio su comportamiento por medio de dichos estados. Las acciones de los cambios de estados están encapsulados dentro de cada estado en si.',
                 'examples' => array()
             ),
             'interpreter' => array(

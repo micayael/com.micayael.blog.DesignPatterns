@@ -12,12 +12,12 @@ class Proxy implements SubjectBaseInterface
 
     private $_realSubject;
     private $_result;
-    
+
     public function __construct()
     {
         $this->_realSubject = new RealSubject();
     }
-    
+
     public function performAction()
     {
         if($this->_result == null)
@@ -27,6 +27,7 @@ class Proxy implements SubjectBaseInterface
 
         return $this->_result;
     }
+
 }
 
 ?>

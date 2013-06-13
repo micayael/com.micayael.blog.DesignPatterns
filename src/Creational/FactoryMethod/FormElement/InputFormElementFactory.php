@@ -13,7 +13,7 @@ use Creational\FactoryMethod\FormElement\Textarea;
  */
 class InputFormElementFactory implements FormElementFactoryInterface
 {
-    
+
     const TYPE_INPUT_TEXT = 0;
     const TYPE_INPUT_PASSWORD = 1;
     const TYPE_TEXTAREA = 2;
@@ -29,6 +29,7 @@ class InputFormElementFactory implements FormElementFactoryInterface
                 throw new \Exception('Tipo desconocido');
         }
     }
+
 }
 
 ?>

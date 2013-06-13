@@ -11,7 +11,7 @@ use Creational\FactoryMethod\FormElement\Select;
  */
 class SelectionFormElementFactory implements FormElementFactoryInterface
 {
-    
+
     const TYPE_SELECT = 3;
 
     public static function create($type, $label, $attrs = array(), $options = array())
@@ -23,6 +23,7 @@ class SelectionFormElementFactory implements FormElementFactoryInterface
                 throw new \Exception('Tipo desconocido');
         }
     }
+
 }
 
 ?>
