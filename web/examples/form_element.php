@@ -30,7 +30,7 @@ $select = SelectionFormElementFactory::create(SelectionFormElementFactory::TYPE_
             'id' => 'paises',
             'value' => '',
             'name' => 'paises',
-        ), array('US' => 'EE.UU.', 'BR' => 'Brasil'));
+                ), array('US' => 'EE.UU.', 'BR' => 'Brasil'));
 echo $select->getHTML();
 
 

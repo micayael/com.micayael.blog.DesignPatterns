@@ -14,7 +14,7 @@ echo PHP_EOL . $audioPlayer->getState() . PHP_EOL;
 $audioPlayer->pressPlayButton();
 $audioPlayer->pressSourceButton();
 
-echo PHP_EOL. $audioPlayer->getState() . PHP_EOL;
+echo PHP_EOL . $audioPlayer->getState() . PHP_EOL;
 
 $audioPlayer->pressPlayButton();
 $audioPlayer->pressPlayButton();

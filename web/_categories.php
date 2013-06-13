@@ -40,7 +40,7 @@ $menu = array(
                 'name' => 'Adapter (Wrapper)',
                 'description' => 'El patrón Adapter, también conocido como Wrapper, permite amoldar una implementación para adecuarse a una interfaz. Se suele tomar como una correción a no haber pensado bien en el análisis de arquitectura del software pero en realidad se utiliza para permitir nuevas implementaciones. Por ejemplo los Adapters de Android permiten que los desarrolladores puedan extender de ellos manteniendo una extructura ya que el framework utilizará esas implementaciones y por lo tanto deberían tener los métodos esperados. Este patrón es muy parecido el Builder pero la diferencia es el momento en que se utilizan. El Adpter permite amoldar un objeto para que pueda conectarse con otro mientras que el Builder está pensado antes como para mantener una estructura desde el comienzo. Hay básicamente dos tipos Class Adapter (heredando de la clase que quiere adaptar) y Object Adapter (el adapter tiene una instancia del objeto a adaptar dentro que puede crearse dentro o recibirse en el constructor)',
                 'examples' => array()
-            ), 
+            ),
             'facade' => array(
                 'name' => 'Facade',
                 'description' => 'Este patrón permite ser una interfaz para acceder a funcionalidades relacionadas sin tener que conocer su procesamientos internos.',

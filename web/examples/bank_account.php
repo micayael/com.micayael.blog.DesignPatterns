@@ -5,7 +5,6 @@
 require_once __DIR__ . '/../bootstrap.php';
 
 use Structural\Facade\BankAccount\BankAccountFacade;
-
 use Util\Util;
 
 $newAcctNum = '12345678';
