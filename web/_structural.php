@@ -79,3 +79,15 @@ $menu['structural']['patterns']['proxy']['examples'] = array(
         'description' => 'En este ejemplo se puede notar que si uso el objeto HighResPhoto, por cada imagen hace el loding y termina mostrando solo la que quiero, mientras que si uso el Proxy, por más que haya creado tres imágenes solo se carga la que tenga que ser mostrada al usuario. Esto permite ahorro de performance. Este es un ejemplo de Virtual Proxy: Retrasa la creación e inacialización de objecto pesados hasta que sean necesitados.'
     ),
 );
+
+/* * *****************************************************************************
+ * EXAMPLES: Flyweight
+ * ***************************************************************************** */
+
+$menu['structural']['patterns']['flyweight']['examples'] = array(
+    array(
+        'name' => 'Circles',
+        'url' => BASE_URL . 'circles.php',
+        'description' => 'Con este ejemplo vemos como por medio de un Factory vamos guardando instancias de un mismo objeto para intentar reutilizarlo (Circle) y no tener que instanciarlo cada vez.'
+    ),
+);

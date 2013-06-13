@@ -63,6 +63,7 @@ $menu = array(
             ),
             'flyweight' => array(
                 'name' => 'Flyweight',
+                'description' => 'Este patrón intenta reducir la cantidad de objetos creados. Intenta reutilizar objetos existentes guardándolos para no tener que realizar otra instancia.',
                 'examples' => array()
             ),
             'composite' => array(
