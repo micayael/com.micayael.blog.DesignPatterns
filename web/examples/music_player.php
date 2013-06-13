@@ -8,21 +8,21 @@ use Behavioral\State\MusicPlayer\PlayState;
 use Behavioral\State\MusicPlayer\StopState;
 use Behavioral\State\MusicPlayer\PauseState;
 
-$musicPlayer = new MusicPlayer();
+$audioPlayer = new MusicPlayer();
 
-echo $musicPlayer->getState();
+echo $audioPlayer->getState();
 
 $playState = new PlayState();
-$playState->doAction($musicPlayer);
-echo $musicPlayer->getState();
+$playState->doAction($audioPlayer);
+echo $audioPlayer->getState();
 
 $pauseState = new PauseState();
-$pauseState->doAction($musicPlayer);
-echo $musicPlayer->getState();
+$pauseState->doAction($audioPlayer);
+echo $audioPlayer->getState();
 
 $stopState = new StopState();
-$stopState->doAction($musicPlayer);
-echo $musicPlayer->getState();
+$stopState->doAction($audioPlayer);
+echo $audioPlayer->getState();
 
 Util::showImage(__FILE__);
 Util::showCode(__FILE__);
