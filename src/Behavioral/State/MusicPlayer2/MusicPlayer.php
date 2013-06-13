@@ -26,19 +26,19 @@ class MusicPlayer
     {
         $this->state = $state;
     }
-    
+
     public function play()
     {
         $playState = new PlayState();
         $playState->doAction($this);
     }
-    
+
     public function pause()
     {
         $pauseState = new PauseState();
         $pauseState->doAction($this);
     }
-    
+
     public function stop()
     {
         $stopState = new StopState();

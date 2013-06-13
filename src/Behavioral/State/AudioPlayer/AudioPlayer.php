@@ -11,12 +11,12 @@ class AudioPlayer
 {
 
     private $state;
-    
+
     public function __construct()
     {
         $this->state = new State\StandbyState();
     }
-    
+
     public function getState()
     {
         return $this->state;
