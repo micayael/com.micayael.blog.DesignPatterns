@@ -20,4 +20,9 @@ $menu['behavioral']['patterns']['state']['examples'] = array(
         'url' => BASE_URL . 'audio_player.php',
         'description' => 'Este ejemplo es un poco más complejo que los anteriores ya que es un aparato de audio que puede estar apagado, en modo mp3 y en modo radio (por medio de un boton se cambia entre estos estados) y tiene un boton de play que dependiendo de en que estado se encuentre cambia play mp3, pause mp3 o cambio de emisora.'
     ),
+    array(
+        'name' => 'ATM Machine',
+        'url' => BASE_URL . 'atm_machine.php',
+        'description' => 'Este ejemplo es aún más complejo ya que indica 4 estados de un cajero y permite tener una visión de que debería pasar por cada acción en cada estado.'
+    ),
 );
