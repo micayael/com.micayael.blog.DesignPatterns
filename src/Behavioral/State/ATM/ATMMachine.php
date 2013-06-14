@@ -2,12 +2,14 @@
 
 namespace Behavioral\State\ATM;
 
+use Structural\Proxy\ATMProxy\ATMMachineInterface;
+
 /**
  * Description of ATMMachine
  *
  * @author jardissone
  */
-class ATMMachine
+class ATMMachine implements ATMMachineInterface
 {
 
     private $state;

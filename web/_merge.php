@@ -53,3 +53,21 @@ foreach($decorator_simplefactory as $example)
     $menu['creational']['patterns']['simple-factory']['examples'][] = $example;
     $menu['structural']['patterns']['decorator']['examples'][] = $example;
 }
+
+/* * *****************************************************************************
+ * EXTRA EXAMPLES: State + Proxy
+ * ***************************************************************************** */
+
+$state_proxy = array(
+    array(
+        'name' => 'ATM Proxy (State + Proxy)',
+        'url' => BASE_URL . 'atm_proxy.php',
+        'description' => 'En este ejemplo vemos como se pueden unir los patrones State (de comportamiento) y el Proxy (de estructura) para usar el proxy como una clase que encapsula solo las funcionalidades a las que un cliente podría acceder por seguridad.'
+    ),
+);
+
+foreach($state_proxy as $example)
+{
+    $menu['behavioral']['patterns']['state']['examples'][] = $example;
+    $menu['structural']['patterns']['proxy']['examples'][] = $example;
+}
