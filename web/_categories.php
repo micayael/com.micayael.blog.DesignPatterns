@@ -77,6 +77,7 @@ $menu = array(
         'patterns' => array(
             'template-method' => array(
                 'name' => 'Template Method',
+                'description' => 'Este patrón permite definir una clase base abstracta que contiene un método que se desea ejecutar invocante a otros métodos que son sobre-escritos en clases concretas. De esta manera se hace la invocación del método del padre para la parte genérica y los métodos específicos son ejecutados desde los hijos.',
                 'examples' => array()
             ),
             'strategy' => array(

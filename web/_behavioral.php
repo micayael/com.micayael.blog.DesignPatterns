@@ -1,6 +1,18 @@
 <?php
 
 /* * *****************************************************************************
+ * EXAMPLES: Template Method
+ * ***************************************************************************** */
+
+$menu['behavioral']['patterns']['template-method']['examples'] = array(
+    array(
+        'name' => 'Parser',
+        'url' => BASE_URL . 'parser.php',
+        'description' => 'este ejemplo muestra un parseador de extractos bancarios que pueden venir como CSV o XML. El template método es el render() quién invoca a los métodos readData() y processData() definidos en las clases concretas.'
+    ),
+);
+
+/* * *****************************************************************************
  * EXAMPLES: State
  * ***************************************************************************** */
 
