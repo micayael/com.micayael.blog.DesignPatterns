@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extracto>
+    <transaccion>
+        <fecha>2013-06-18</fecha>
+        <descripcion>Deposito 1</descripcion>
+        <debe>1000</debe>
+        <haber>0</haber>
+    </transaccion>
+    <transaccion>
+        <fecha>2013-06-18</fecha>
+        <descripcion>Cheque 1</descripcion>
+        <debe>0</debe>
+        <haber>200</haber>
+    </transaccion>
+    <transaccion>
+        <fecha>2013-06-18</fecha>
+        <descripcion>Cheque 2</descripcion>
+        <debe>0</debe>
+        <haber>100</haber>
+    </transaccion>
+</extracto>
