@@ -13,6 +13,18 @@ $menu['behavioral']['patterns']['template-method']['examples'] = array(
 );
 
 /* * *****************************************************************************
+ * EXAMPLES: Template Method
+ * ***************************************************************************** */
+
+$menu['behavioral']['patterns']['strategy']['examples'] = array(
+    array(
+        'name' => 'Calculator',
+        'url' => BASE_URL . 'calculator.php',
+        'description' => 'Con este ejemplo se puede ver que se utiliza un algoritmo diferente dependiendo de la necesidad en tiempo de ejecución..'
+    ),
+);
+
+/* * *****************************************************************************
  * EXAMPLES: State
  * ***************************************************************************** */
 

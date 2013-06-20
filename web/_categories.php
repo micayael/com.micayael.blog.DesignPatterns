@@ -82,6 +82,7 @@ $menu = array(
             ),
             'strategy' => array(
                 'name' => 'Strategy',
+                'description' => 'Hay una línea muy delgada entre el patrón Strategy y el Builder. La diferencia está más bien orientada hacia el objetivo. El Builder es un patrón creación y tiene como propósito crear objetos complejos, mientras que el strategy es de comportamiento y provee un comportamiento con un algoritmo diferente de acuerdo a la necesidad. El diagrama UML es muy parecido. Mientras que el Builder devuelve un objeto creado el Strategy utiliza un objeto en tiempo de ejecución para comportarse de forma diferente.',
                 'examples' => array()
             ),
             'observer' => array(
