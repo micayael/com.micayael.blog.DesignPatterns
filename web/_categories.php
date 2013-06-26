@@ -86,7 +86,8 @@ $menu = array(
                 'examples' => array()
             ),
             'observer' => array(
-                'name' => 'Observer',
+                'name' => 'Observer (Subscribe)',
+                'description' => 'Este patrón permite tener dos clasificaciones de objetos a quienes se los representa por medio de interfaces. Los objetos "Observables" son los que pueden ser observados por los Observers o lo que es lo mismo quienes notifican los cambios a los Observers quienes se suscriben a estos avisos.',
                 'examples' => array()
             ),
             'mediator' => array(

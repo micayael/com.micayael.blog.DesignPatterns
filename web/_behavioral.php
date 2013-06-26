@@ -50,3 +50,30 @@ $menu['behavioral']['patterns']['state']['examples'] = array(
         'description' => 'Este ejemplo es aún más complejo ya que indica 4 estados de un cajero y permite tener una visión de que debería pasar por cada acción en cada estado.'
     ),
 );
+
+/* * *****************************************************************************
+ * EXAMPLES: Observer
+ * ***************************************************************************** */
+
+$menu['behavioral']['patterns']['observer']['examples'] = array(
+    array(
+        'name' => 'Log',
+        'url' => BASE_URL . 'log.php',
+        'description' => 'Ejemplo basico por cambios de estado. Cuando se modifica el estado los observers reciben el mensaje.'
+    ),
+    array(
+        'name' => 'Hospital',
+        'url' => BASE_URL . 'hospital.php',
+        'description' => 'Este ejemplo es bastante completo. Simula como en un hospital los médicos y las enfermeras pueden estar suscriptas a las notificaciones de urgencia de los pacientes. Se tiene en lugar de una interfaz para el Subject una clase abstracta para hacerla genérica y para hacer genérica la interfaz del Observer se crea una interfaz Event para implementarla y usarla para pasar el mensaje a los observers desde el subject.'
+    ),
+    array(
+        'name' => 'PostOffice',
+        'url' => BASE_URL . 'postoffice.php',
+        'description' => 'Este ejemplo intenta simular un sistema de correo en donde los MailBox representan la casilla en donde los que entregan los correos son avisados para llevar los correos.'
+    ),
+    array(
+        'name' => 'Stock',
+        'url' => BASE_URL . 'stock.php',
+        'description' => 'Este ejemplo tiene algo extra. Al crear Observer ya se asigna por el constructor el Subject que lo va a agregar y este proceso se hace dentro del Observer.'
+    ),
+);
