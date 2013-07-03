@@ -30,4 +30,21 @@ class Util
         echo PHP_EOL . PHP_EOL . '<!--Hasta aqui el codigo generado-->' . PHP_EOL . '<hr /><img src="../images/' . $filename . '" />';
     }
 
+    public static function csvToTable($filename)
+    {
+        echo "<table border='1'>\n\n";
+        $f = fopen($filename, "r");
+        while(($line = fgetcsv($f, 0, ';')) !== false)
+        {
+            echo "<tr>";
+            foreach($line as $cell)
+            {
+                echo "<td>" . htmlspecialchars($cell) . "</td>";
+            }
+            echo "<tr>\n";
+        }
+        fclose($f);
+        echo "\n</table>";
+    }
+
 }

@@ -71,3 +71,21 @@ foreach($state_proxy as $example)
     $menu['behavioral']['patterns']['state']['examples'][] = $example;
     $menu['structural']['patterns']['proxy']['examples'][] = $example;
 }
+
+/* * *****************************************************************************
+ * EXTRA EXAMPLES: Observer + State
+ * ***************************************************************************** */
+
+$state_proxy = array(
+    array(
+        'name' => 'Ecommerce (Observer + State)',
+        'url' => BASE_URL . 'ecommerce.php',
+        'description' => 'Este ejemplo muestra como van cambiando los estados del pedido y venta de un sitio ecommerce como así también el registro de un historial de cambio de estados mediante un observer.'
+    ),
+);
+
+foreach($state_proxy as $example)
+{
+    $menu['behavioral']['patterns']['state']['examples'][] = $example;
+    $menu['structural']['patterns']['observer']['examples'][] = $example;
+}
